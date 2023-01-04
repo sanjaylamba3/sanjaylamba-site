@@ -1,0 +1,165 @@
+#nav{
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 55px;
+  bottom: 0;
+  width: 224px;
+  flex-direction: column;
+  overflow-y: scroll;
+  cursor:auto;
+  padding: 0 4px 0 12px;
+  background-color: white;
+  z-index: 101;
+}
+.overlay{
+  display: none;
+  background-color: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  
+}
+.section-1 div,.section-2 div,.section-3 div,.section-4 div,.section-5 div{
+  cursor: pointer;
+}
+.section-1 div:hover,.section-2 div:hover,.section-3 div:hover,.section-4 div:hover,.size-l div:hover{
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px;
+}
+
+.size-l{
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  
+}
+.size-xl{
+  display: flex;
+  flex-direction: column;
+}
+
+.size-l div{
+  height: 44px;
+  width: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 10px 14px 10px;
+}
+
+.size-l img{
+  padding:0 10px 8px 10px;
+}
+.section-1,.section-2,.section-3,.section-4{
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+#nav img{
+  height: 24px;
+  width: 24px;
+}
+.section-1 div,.section-2 div,.section-3 div,.section-4 div{
+  width: 180px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  justify-content:left;
+  padding: 0 12px;
+}
+
+
+.section-1 > div>p,.section-2 > div>p,.section-3 > div>p,.section-4 > div>p{
+  margin-left: 24px;
+}
+
+
+.section-3-heading,.section-4-heading{
+  font-size: 16px;
+  font-weight: 400;
+  padding: 8px 12px;
+  cursor:auto;
+}
+.section-3 img{
+  border-radius: 12px;
+}
+
+ 
+@media (max-width:1300px) {
+  body{
+    padding-left: 96px;
+  }
+  #nav{
+    width: 72px;
+    padding: 10px;
+    font-size: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+.size-xl{
+  display: none;
+}
+.size-l{
+  display: flex;
+}
+}
+
+
+
+
+
+@media (max-width:600px){
+
+  #nav{
+    display: none;
+    width: 224px;
+    overflow-y: scroll;
+    padding: 0 4px 0 12px;
+    
+  }
+
+
+.size-l{
+  display: none;
+}
+
+
+.size-xl{
+  display: flex;
+
+}
+
+
+  body{
+    padding-left: 24px;
+
+  }
+
+  #nav:target {
+    display: flex;
+  }
+  body::selection #nav:target{
+    display: none;
+
+ 
+  }
+  
+  
+}
+
+
+
+
+
+
+
+
