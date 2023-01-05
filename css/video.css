@@ -3,6 +3,9 @@
   width: 100%;
 }
 
+.video-container{
+  cursor: pointer;
+}
 
 .profile-picture {
   width: 36px;
