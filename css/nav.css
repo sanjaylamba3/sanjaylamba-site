@@ -118,15 +118,21 @@
 
 
 @media (max-width:600px){
-
   #nav{
     display: none;
-    width: 224px;
+  }
+
+  body:has(#ham:checked) #nav {
+    display: block;
+    width: 210px;
     overflow-y: scroll;
     padding: 0 4px 0 12px;
+    z-index: 1000;
+    
     
   }
 
+  
 
 .size-l{
   display: none;
@@ -142,20 +148,8 @@
   body{
     padding-left: 24px;
 
-  }
-
-  #nav:target {
-    display: flex;
-  }
-  body::selection #nav:target{
-    display: none;
-
- 
-  }
-  
-  
+  }  
 }
-
 
 
 
