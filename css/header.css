@@ -15,11 +15,7 @@
   display: flex;
   align-items: center;
 }
-.hamburger-icon{
-  height: 24px;
-  /* margin: 0 24px; */
-  cursor: pointer;
-}
+
 .youtube-logo{
   height: 20px;
   cursor: pointer;
@@ -53,9 +49,7 @@
   
   
 }
-.search-btn:hover,.voice-search-btn:hover{
-  background-color: rgb(230, 230, 230);
-}
+
 .search-icon{
   height: 25px;
 }
@@ -116,11 +110,13 @@
   transition: 0.2s background-color;
   
 }
-.upload-btn:hover,.notifications-btn:hover{
-  background-color: rgb(230, 230, 230);
-  
 
+
+
+.upload-btn:hover,.notifications-btn:hover,.search-btn:hover,.voice-search-btn:hover,.hamburger-icon:hover{
+  background-color: rgb(230, 230, 230);
 }
+
 .user-profile-pic{
   height: 32px;
   border-radius: 16px;
@@ -162,8 +158,22 @@
   opacity: 1;
 }
 
-.left-section a{
-  width: 24px;
-  height: 24px;
-  margin: 0 24px;
+.left-section #ham{
+  display: none;
 }
+
+.hamburger-icon{
+  height: 24px;
+  margin: 4px 14px 0 14px;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.2s background-color;
+}
+
+label {
+  position: relative;
+  cursor: pointer;
+}
+
+
