@@ -1,0 +1,13 @@
+body{
+ 
+  background: linear-gradient(to right, red, blue) ;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h3{
+  margin-top: 300px;
+}
